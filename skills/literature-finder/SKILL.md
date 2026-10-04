@@ -1,112 +1,145 @@
 # 教育学 SSCI 论文快速检索 Skill
 
-这是一个面向教育学研究者的 AI skill，聚焦于：
-- 高等教育中学生尤其是女生的就读体验
-- SSCI 文献检索与文献筛选
-- 研究议题提炼与文献综述方向设计
-- 适合用于论文选题、文献综述、课题申报和研究设计
+## 目标
+帮助教育学研究者在高等教育情境中快速检索与分析“学生尤其是女生的就读体验”相关的 SSCI 文献，支持论文选题、文献综述、研究设计和课题申报。
 
-## 功能描述
-帮助教育学研究者快速检索并评估与“高等教育中学生尤其是女生就读体验”相关的 SSCI 论文，重点关注：
-- 学习体验
-- 归属感
-- 情绪压力与心理适应
-- 校园环境与支持系统
-- 性别差异与教育公平
-- 学业投入与继续就读/保留率
-- 教学实践、院校支持与制度设计
-
-## 触发条件
-当用户输入以下任一表现时，启动本 skill：
-- 检索 XXX
-- 找关于 XXX 的 SSCI 论文
-- 我想看高等教育中 XXX 的研究
-- 女生在高等教育中的 XXX 体验
-- 大学生 XXX 研究综述
-- 教育学中 XXX 的研究空白
-
-## 适用主题
-本 skill 适用于以下教育学主题：
+## 核心主题
+- 大学生就读体验
 - 女生高等教育体验
-- 高等教育学生归属感
-- 大学生学业适应与情绪管理
-- 大学生心理健康和校园支持
-- 教育公平与性别差异
-- 虚拟/混合式学习中的体验差异
-- 课程体验、教学环境与学习参与度
-- 学生支持系统、导师关系和社交支持
+- 归属感（sense of belonging）
+- 学业适应（academic adjustment）
+- 心理健康与情绪体验
+- 校园支持与教学环境
+- 性别差异与教育公平
+- 高等教育中的社会支持与制度设计
 
-## 工作流程
+## 触发方式
+当用户输入以下任意表达时，启动本 skill：
+- 检索 XXX
+- 我想看关于 XXX 的 SSCI 文献
+- 高等教育中 XXX 的研究
+- 女生在高等教育中的 XXX 体验
+- 大学生就读体验研究
 
-### Step 1：识别研究对象与构念
-从用户问题中提取：
-- 研究对象：大学生/女生/高等教育参与者
-- 研究维度：体验/适应/支持/压力/归属感/参与度
-- 研究背景：本科/研究生/高校/专业/课程/校园环境
+## 优先研究场景
+本 skill 默认优先处理：
+- 大学生尤其是女生在高等教育中的学习体验
+- 女生在高校中的归属感、参与度、适应性与心理状态
+- 性别差异下的校园环境和文化体验
+- 高等教育中的支持系统（教��、同伴、制度、心理服务等）
 
-### Step 2：转换为学术关键词
-将中文概念转换为英文 SSCI 通常使用的学术表述。
+## 关键词库
+### 1. 研究对象关键词
+- college students
+- university students
+- undergraduate students
+- postgraduate students
+- female students
+- women students
+- female undergraduates
+- gendered experiences
 
-常用关键词模板：
-- female students / women students / gendered experiences
-- higher education / university students / college students / undergraduate students
-- student experience / university experience / academic experience
-- sense of belonging / belongingness / inclusion / campus climate
-- academic adjustment / transition / adaptation
-- wellbeing / stress / mental health / emotional labor
-- social support / institutional support / peer support
-- engagement / retention / persistence / satisfaction
+### 2. 研究维度关键词
+- student experience
+- higher education experience
+- academic experience
+- learning experience
+- sense of belonging
+- campus climate
+- academic adjustment
+- emotional experience
+- wellbeing
+- psychological adjustment
+- social support
+- institutional support
+- engagement
+- persistence
+- retention
 
-### Step 3：明确研究目的
-根据用户输入判断其研究方向：
-- 描述性：哪些因素影响学生体验？
-- 解释性：为什么女生在高等教育中有不同经验？
-- 评估性：支持机制是否有效？
-- 预测性：哪些因素影响学业保留和成就？
-- 综述型：哪些已被研究、哪些研究不足？
+### 3. 性别与教育公平关键词
+- gender inequality
+- gendered experiences
+- sexism
+- intersectionality
+- educational equity
+- inclusion
+- exclusion
+- marginalization
+- belongingness
 
-### Step 4：文献筛选标准
+### 4. 研究情境关键词
+- higher education
+- university context
+- campus environment
+- classroom climate
+- online learning
+- blended learning
+- STEM education
+- humanities education
+- women in higher education
+
+## 检索逻辑
+### Step 1：识别研究问题
+先提取以下信息：
+- 核心对象：大学生 / 女生 / 高等教育学生
+- 核心维度：体验 / 适应 / 帮助系统 / 归属感 / 压力 / 情绪 / 包容性
+- 研究情境：本科 / 研究�� / 校园环境 / 网络学习 / 教学实践 / 专业背景
+
+### Step 2：构建搜索词组合
+将中文问题转换成英文学术表达，优先使用组合关键词：
+- female students AND higher education AND student experience
+- women students AND sense of belonging AND university climate
+- female undergraduates AND academic adjustment AND campus support
+- gendered experiences AND higher education AND wellbeing
+
+### Step 3：筛选文献范围
+严格筛选：
+- 仅 SSCI 期刊论文
+- 优先近 5 年文献
+- 同时保留经典文献
+- 优先选择能够明确说明方法、样本和主要结论的文献
+
+### Step 4：评价文献质量
 优先考虑：
-- SSCI 期刊论文
-- 近年文献（优先近 5 年；同时保留经典文献）
-- 研究设计清晰的论文
-- 研究对象明确匹配教育情境
-- 能直接回答“学生体验”“归属感”“性别差异”“支持系统”等核心问题
+- 研究设计是否清楚（定量、定性、混合方法、综述）
+- 是否有明确样本和研究情境
+- 文献是否直接回应研究问题
+- 研究是否与高等教育女生体验密切相关
 
 ### Step 5：排序规则
-按以下优先顺序排序：
+按以下顺序排序：
 1. 年份（近年优先）
 2. 与用户问题直接相关性
-3. 研究设计质量（系统综述 > 元分析 > 大样本定量 > 混合方法 > 定性）
-4. 期刊质量（SSCI 期刊中的影响力与主题匹配度）
+3. 研究设计质量
+4. 期刊质量和主题匹配度
 
-### Step 6：输出结构
-输出时必须包含以下内容：
+## 输出要求
+必须按以下结构输出：
 
-#### A. 研究问题概括
-- 研究主题：
-- 关键词：
-- 研究对象：
-- 重点维度：
+### A. 研究问题概括
+- 研究主题
+- 关键词
+- 研究对象
+- 重点维度
 
-#### B. 最值得优先阅读的文献（3–5 篇）
-每篇至少包含：
-- 标题
+### B. 最值得优先阅读的文献（3–5 篇）
+每篇文献至少包含：
+- 题目
 - 年份
-- 期刊名称
-- 研究方法（定量/定性/混合/综述）
-- 核心发现（1–2 句）
-- 适用性说明（为什么适合该研究问题）
+- 期刊名
+- 研究方法
+- 核心发现
+- 适用性说明
 
-#### C. 相关文献补充
-- 另外给出 5–15 篇相关��献
+### C. 相关文献补充
+- 列出 5–15 篇相关文献
 - 按年份排序
-- 简要说明主题方向
+- 短说明主题方向
 
-#### D. 研究空白与建议方向
+### D. 研究空白与建议方向
 - 当前研究不足
-- 适合进一步展开的研究切口
-- 可用于论文选题或综述写作的方向
+- 最值得进一步研究的切口
+- 可用于论文选题和文献综述的方向
 
 ## 输出示例
 
@@ -114,57 +147,43 @@
 检索：大学女生在高等教育中的就读体验
 
 ### 示例输出模板
+**研究问题**：高等教育中女生的就读体验、归属感与校园支持对学业适应和心理健康的影响。
 
-**研究问题**：探讨高等教育中女生的学习体验、归属感与校园支持如何影响其学业适应和心理健康。
+**关键词**：female students; higher education; student experience; sense of belonging; campus climate; academic adjustment; wellbeing
 
-**关键词**：female students; higher education; student experience; sense of belonging; campus climate; gendered experiences; academic adjustment
-
-**优先推荐文献：**
+**优先推荐文献**：
 1. [论文题目] — [期刊], [年份]
    - 核心发现：...
-   - 方法：...
+   - 研究方法：...
    - 适用性：...
 
 2. [论文题目] — [期刊], [年份]
    - 核心发现：...
-   - 方法：...
+   - 研究方法：...
    - 适用性：...
 
 3. [论文题目] — [期刊], [年份]
    - 核心发现：...
-   - 方法：...
+   - 研究方法：...
    - 适用性：...
 
 **研究空白**：
-- 现有研究多集中在欧美高校背景，对中国高等教育情境中的女生体验研究仍较有限
-- 对不同专业或不同成长背景女生的体验差异研究仍不足
-- 在线学习、混合式学习和校园支持系统间的关系研究尚需深化
+- 中国高等教育情境下女生就读体验研究仍相对有限
+- 对不同专业、不同背景学生的体验差异分析不足
+- 在线学习和混合式学习中的性别差异体验研究仍需加强
 
 ## 注意事项
-- 只输出与 SSCI 相关的文献，不混淆普通期刊
-- 不要编造文献标题、作者或期刊名称
-- 若无法确认某篇文献是否为 SSCI，明确写“无法确认”而不是直接断言
-- 若用户研究主题较宽，需先明确缩小范围再检索
-- 输出以“适合教育学研究者直接用于文献综述与研究设计”为原则
+- 仅输出 SSCI 相关文献，不混淆普通期刊
+- 不编造文献标题、作者或期刊名称
+- 若无法确认某篇文献是否为 SSCI，明确写“无法确认”
+- 若问题范围过宽，需要先细化到更具体的研究对象和维度
+- 结果需以“适合教育学研究者直接用于文献综述与研究设计”为主要目标
 
-## 示例使用
-用户输入：
-- 检索大学女生高等教育中的就读体验
-- 检索高等教育中女生归属感研究
-- 检索大学生校园支持与情绪管理研究
-- 检索高等教育中学生体验与教育公平研究
-
-AI 应返回：
-- 关键词建议
-- 最值得优先阅读的 3–5 篇文献
-- 研究缺口分析
-- 可进一步展开的研究方向
-
-## 扩展规划
-未来可以进一步扩展为：
+## 扩展方向
+后续可进一步扩展：
 - `lesson-design-reviewer`：教学设计检查器
 - `proposal-helper`：课题申报助手
-- `assignment-feedback`：作业及论文反馈辅助器
-- `education-meta-search`：教育学多主题统一检索工作流
+- `assignment-feedback`：作业与论文评阅工具
+- `education-search-workflow`：教育学研究工作流工具
 
-这个 skill 适合于教育学论文选题、文献综述、研究设计和课题申报等场景。
+这个 skill 适合用于教育学论文选题、文献综述、研究设计和课题申报。
